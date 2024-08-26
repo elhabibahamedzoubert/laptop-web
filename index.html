@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="transparent-header py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span class="me-3"> <i class='bx bxs-location-plus'></i>Mutsamudu,Hampanga</span>
+            <span class="me-3"><i class='bx bxs-phone-call' ></i> +255 742 284 368</span>
+        </div>
+        <div>
+            <a href="#" class="me-2"><i class="bi bi-globe"></i> English</a>
+            <a href="#"><i class="bi bi-globe"></i> Français</a>
+        </div>
+        <div>
+          <a href="https://facebook.com" class="me-2" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+          <a href="https://wa.me/1234567890" class="me-2" target="_blank"><i class='bx bxl-instagram' ></i></a>
+          <a href="https://instagram.com" class="me-2" target="_blank"><i class='bx bxl-twitter' ></i></a>
+      </div>
+    </div>
+</header>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">EL@Tronic</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">contact</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+          <a href="login.html" class="login-button">Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
+      <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('img/her04.png');">
+                    <div class="content">
+                        <h1 class="display-4">Bienvenue sur notre site</h1>
+                        <p class="lead">Explorez nos services et découvrez ce que nous pouvons faire pour vous.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-lg me-2">Learn More</a>
+                            <a href="#" class="btn btn-secondary btn-lg">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/her07.jpg');">
+                    <div class="content">
+                        <h1 class="display-4">Votre partenaire en technologie</h1>
+                        <p class="lead">Nous fournissons des solutions de qualité pour booster votre entreprise.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-lg me-2">Learn More</a>
+                            <a href="#" class="btn btn-secondary btn-lg">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/webcompany.png');">
+                    <div class="content">
+                        <h1 class="display-4">Innovation et Excellence</h1>
+                        <p class="lead">Nos services sont conçus pour répondre à tous vos besoins technologiques.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-lg me-2">Learn More</a>
+                            <a href="#" class="btn btn-secondary btn-lg">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> 
+        </div>
+    </section>
+
+    <section class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>We Provide Superior IT Services</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a href="#" class="btn btn-primary">View All Services</a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/webcompany.png" alt="Business Planning" class="img-fluid">
+              <h3>Web Developpement</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="learn1.html" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/kjk.jpg" alt="Project Management" class="img-fluid">
+              <h3>Project Management</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="exel.html" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/graphic.jpeg" alt="UI/UX Design" class="img-fluid">
+              <h3>graphic</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="#" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/Mobile-App.png" alt="UI/UX Design" class="img-fluid">
+              <h3>Developpement Mobile APP</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="#" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/Maintainacepc.jpg" alt="UI/UX Design" class="img-fluid">
+              <h3>Maintenance</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="#" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 service-item">
+            <div class="service-content">
+              <img src="img/flash.jpg" alt="UI/UX Design" class="img-fluid">
+              <h3>Reparer un telephone</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+              <a href="#" class="btn btn-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    
+      </div>
+    </div>
+
+    
+    <div class="container mt-5">
+      <div class="row align-items-center">
+          <!-- Image à gauche -->
+          <div class="col-md-6">
+              <img src="img/webcompany.png" class="img-fluid rounded" alt="À propos de nous">
+          </div>
+          <!-- Texte à droite -->
+          <div class="col-md-6">
+              <h2>À propos de notre entreprise</h2>
+              <p>
+                  Nous sommes une entreprise dédiée à fournir des services informatiques de qualité supérieure. Avec des années d'expérience dans le secteur, nous nous engageons à offrir des solutions innovantes à nos clients.
+              </p>
+              <p>
+                  Notre équipe d'experts travaille en étroite collaboration avec vous pour comprendre vos besoins et développer des stratégies personnalisées qui maximisent vos résultats.
+              </p>
+              <a href="Contacter.html" class="btn btn-primary mt-3">Contactez-nous</a>
+          </div>
+      </div>
+  </div>
+
+    <footer class="bg-light text-dark pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">About</h5>
+            <hr class="mb-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius odio, 
+              quas doloremque numquam rem enim earum fugit incidunt 
+              molestias nostrum minus, at iusto odit et porro ullam! Cupiditate, excepturi?</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Let us Help</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Your Acoount</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Manage and content your Device</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Help</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Your Acoount</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Make Money</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">sell product in our websdite</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Advertise your product</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">Become an afiliate</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration:none">self-publish</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+            <hr class="mb-4">
+            <p>
+              <li class="fa-solid fa-house"></li>New york NY 2333,Us
+            </p>
+            <p>
+              <li class="fa-regular fa-envelope"></li>elhabibahmed95@gmail.com
+            </p>
+
+            <p>
+              <li class="fa-solid fa-phone mr-3"></li>+255 742 284 368
+            </p>
+
+            <p>
+              <li class="fas-fa-home mr-3">+25 7257 82</li>
+            </p>
+          </div>
+
+          <hr class="mb-4">
+          <div class="row d-flex justify-content-center" >
+            <div>
+              <p>
+                copyrigth 2024 all right reserved by :
+                <a href="#" style="text-decoration: none;">
+                  <strong class="text-info">El-habib</strong>
+                </a>
+              </p>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="text-center">
+                <ul class="list unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="" class="text-dark "><li class="fa-brands fa-facebook-f"></li></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-dark "><li class="fa-brands fa-instagram"></li></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-dark "><li class="fa-brands fa-linkedin"></li></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-dark "><li class="fa-brands fa-facebook-f"></li></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-dark "><li class="fa-brands fa-twitter"></li></a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
